@@ -1,0 +1,30 @@
+version: '3'
+services:
+  api:
+    build: ../go_another_chatgpt
+    volumes:
+      - ../go_another_chatgpt:/app
+    ports:
+      - "8080:8080"
+    networks:
+      - default-network
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+  db:
+    image: mysql:8.0
+#    volumes:
+#      - ./db:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - default-network
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: chatgpt
+      MYSQL_USER: ubuntu
+      MYSQL_PASSWORD: ubuntu
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+networks:
+  default-network:
