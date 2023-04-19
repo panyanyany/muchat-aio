@@ -41,6 +41,7 @@ services:
     depends_on:
       - db
     command: sh -c "sh dk_init.sh && go build -o bin/go_another_chatgpt && /wait && ./bin/go_another_chatgpt"
+    # command: sh -c "/wait && sleep 999999"
     environment:
       - WAIT_HOSTS=db:3306
       - WAIT_HOSTS_TIMEOUT=300
