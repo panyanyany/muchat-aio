@@ -4,8 +4,11 @@ services:
     build: ../muchat-react
     volumes:
       - ../muchat-react:/app
+      - /app/node_modules
     ports:
      - "3000:3000"
+    command: sh -c "sh dk_init.sh && yarn start"
+    # command: sleep 999999
   admin:
     build: ../muchat-laravel
     volumes:
@@ -20,6 +23,7 @@ services:
     depends_on:
       - db
     command: sh -c "/wait && sh /app/dk_init.sh"
+    # command: sh -c "/wait && sleep 999999"
     environment:
       - WAIT_HOSTS=db:3306
       - WAIT_HOSTS_TIMEOUT=300
@@ -36,7 +40,7 @@ services:
       - default-network
     depends_on:
       - db
-    command: sh -c "go build -o bin/go_another_chatgpt && /wait && ./bin/go_another_chatgpt"
+    command: sh -c "sh dk_init.sh && go build -o bin/go_another_chatgpt && /wait && ./bin/go_another_chatgpt"
     environment:
       - WAIT_HOSTS=db:3306
       - WAIT_HOSTS_TIMEOUT=300
