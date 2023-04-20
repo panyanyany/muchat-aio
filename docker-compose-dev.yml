@@ -1,0 +1,76 @@
+version: '3'
+services:
+  daemon:
+    build: .
+    command: sh dk_init.sh
+    volumes:
+      - .:/app
+    networks:
+      - default-network
+  web:
+    build: ../muchat-react
+    volumes:
+      - ../muchat-react:/app
+      - /app/node_modules
+    ports:
+     - "3000:3000"
+    command: sh -c "sh dk_init.sh && yarn start"
+    networks:
+      - default-network
+    # command: sleep 999999
+  admin:
+    build: ../muchat-laravel
+    volumes:
+      - ../muchat-laravel:/app
+      - /app/vendor
+      - /app/node_modules
+    ports:
+      - "8000:8000"
+      - "5173:5173"
+    networks:
+      - default-network
+    depends_on:
+      - db
+    command: sh -c "/wait && sh /app/dk_init.sh"
+    # command: sh -c "/wait && sleep 999999"
+    environment:
+      - WAIT_HOSTS=db:3306
+      - WAIT_HOSTS_TIMEOUT=300
+      - WAIT_SLEEP_INTERVAL=3
+      - WAIT_HOST_CONNECT_TIMEOUT=3
+      - DB_HOST=db
+  api:
+    build: ../muchat-go
+    volumes:
+      - ../muchat-go:/app
+    ports:
+      - "8080:8080"
+    networks:
+      - default-network
+    depends_on:
+      - db
+    command: sh -c "sh dk_init.sh && go build -o bin/go_another_chatgpt && /wait && ./bin/go_another_chatgpt"
+    # command: sh -c "/wait && sleep 999999"
+    environment:
+      - WAIT_HOSTS=db:3306
+      - WAIT_HOSTS_TIMEOUT=300
+      - WAIT_SLEEP_INTERVAL=3
+      - WAIT_HOST_CONNECT_TIMEOUT=3
+      - DB_HOST=db
+      - DB_NAME=muchat
+  db:
+    image: mysql:8.0
+    volumes:
+      - ../muchat-laravel/docker/db:/docker-entrypoint-initdb.d
+    ports:
+      - "3307:3306"
+    networks:
+      - default-network
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: muchat
+      MYSQL_USER: ubuntu
+      MYSQL_PASSWORD: ubuntu
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+networks:
+  default-network:

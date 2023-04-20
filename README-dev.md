@@ -16,7 +16,7 @@
 - [ ] 支持预设 Prompt
 - [ ] 接入支付
 
-# Docker 部署（推荐）
+# Docker 开发环境搭建 （推荐）
 ```
 cd /var/www/muchat
 
@@ -26,7 +26,7 @@ git clone https://github.com/panyanyany/muchat-react
 git clone https://github.com/panyanyany/muchat-laravel
 
 cd muchat-aio
-docker compose up
+docker compose -f docker-compose-dev.yml up
 ```
 
 - 当控制台出现如下提示，表示启动成功：
