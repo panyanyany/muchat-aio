@@ -1,6 +1,9 @@
 # Muchat
 团队版 ChatGPT Web 应用，免登录，适合公司、组织或小团体内部使用。
 
+- [加入交流群](#技术交流群)  
+- [捐赠](#捐赠)  
+
 ## 特性
 - 无需登录，输入卡密即可使用
 - 支持多分站
@@ -68,3 +71,14 @@ docker compose up
 # 最终用户界面
 
 ![](./assets/img/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2.jpg)
+
+# 技术交流群
+
+添加好友，拉你进群：
+
+![](./assets/img/wechat.jpg)
+
+# 捐赠
+
+![](./assets/img/alipay.jpg)
+![](./assets/img/wechatpay.jpg)
