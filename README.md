@@ -16,7 +16,7 @@
 - [ ] 支持预设 Prompt
 - [ ] 接入支付
 
-# Docker 部署（推荐）
+# Docker 开发环境搭建（推荐）
 ```
 cd /var/www/muchat
 
