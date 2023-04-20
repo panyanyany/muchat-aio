@@ -11,5 +11,9 @@ cd muchat-aio
 docker compose up
 ```
 
-- 访问 Web UI： http://localhost:3000
-- 访问 管理后台： http://localhost:8000/admin
+当控制台出现如下提示，表示启动成功：  
+  
+![](./assets/img/allup.jpg)
+
+访问 Web UI： http://localhost:3000  
+访问 管理后台： http://localhost:8000/admin

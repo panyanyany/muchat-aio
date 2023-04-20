@@ -1,5 +1,12 @@
 version: '3'
 services:
+  daemon:
+    build: .
+    command: sh dk_init.sh
+    volumes:
+      - .:/app
+    networks:
+      - default-network
   web:
     build: ../muchat-react
     volumes:
@@ -8,6 +15,8 @@ services:
     ports:
      - "3000:3000"
     command: sh -c "sh dk_init.sh && yarn start"
+    networks:
+      - default-network
     # command: sleep 999999
   admin:
     build: ../muchat-laravel
