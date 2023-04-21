@@ -72,5 +72,10 @@ services:
       MYSQL_USER: ubuntu
       MYSQL_PASSWORD: ubuntu
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    healthcheck:
+      test: mysql -u"$${MYSQL_USER}" -p"$${MYSQL_PASSWORD}" "$${MYSQL_DATABASE}" -e 'SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES LIMIT 1;'
+      interval: 30s
+      timeout: 10s
+      retries: 3
 networks:
   default-network:
