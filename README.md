@@ -21,8 +21,7 @@
 > 注意：需要有科学环境，否则可能会出现各种问题。
 
 硬件环境：
-- 推荐 [阿里云香港](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=d3lnfvg1)
-- 或者 [DigitalOcean](https://m.do.co/c/d353e23d928f)
+- 推荐 [阿里云香港](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=d3lnfvg1) 或者 [DigitalOcean](https://m.do.co/c/d353e23d928f)
 - 2C2G 以上
 
 ```
