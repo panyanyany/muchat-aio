@@ -23,10 +23,10 @@
 ```
 cd /var/www/muchat
 
-git clone https://github.com/panyanyany/muchat-aio
-git clone https://github.com/panyanyany/muchat-go
-git clone https://github.com/panyanyany/muchat-react
-git clone https://github.com/panyanyany/muchat-laravel
+git clone https://github.com/panyanyany/muchat-aio          # all in one, 从这里启动整个系统
+git clone https://github.com/panyanyany/muchat-go           # Go 语言实现的接口
+git clone https://github.com/panyanyany/muchat-react        # React 实现的用户侧 UI
+git clone https://github.com/panyanyany/muchat-laravel      # Laravel 实现的后台管理 UI
 
 cd muchat-aio
 docker compose up
