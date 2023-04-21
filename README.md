@@ -73,10 +73,11 @@ docker compose up
 ![](./assets/img/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2.jpg)
 
 ## TODO
-- [ ] 支持按 Token 计费
-- [ ] 支持AI绘画
 - [ ] 可保存聊天记录
 - [ ] 支持多个对话
+- [ ] 支持按 Token 计费
+- [ ] 支持 stream
+- [ ] 支持AI绘画
 - [ ] 支持预设 Prompt
 - [ ] 接入支付
 
