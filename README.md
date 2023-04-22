@@ -58,13 +58,14 @@ sudo docker compose down --rmi all
     - 密码：admin
     - 注意：记得改密码
 
-# 添加 API-KEY
+# 基本操作
+## 添加 API-KEY
 打开 http://localhost:8000/admin/muchat/open_ai_accounts/create
 
 填写2个必填字段：
 ![](./assets/img/OpenAi%E8%B4%A6%E5%8F%B7%E7%AE%A1%E7%90%86-Add.jpg)
 
-# 添加卡密
+## 添加卡密
 打开 http://localhost:8000/admin/muchat/muchat_users/create
 
 单击【生成】自动生成 slug 作为用户登录的唯一凭证（即激活码）
@@ -76,7 +77,7 @@ sudo docker compose down --rmi all
 - Max days: 最大有效天数（自激活时算起，不激活则不计算）
 - Expires at: 过期时间，当用户第一次使用时，会根据 Max days 自动计算
 
-# 使用（用户侧）
+## 使用（用户侧）
 打开 http://localhost:3000/
 
 ![](./assets/img/%E8%BE%93%E5%85%A5%E6%BF%80%E6%B4%BB%E7%A0%81.jpg)
@@ -85,11 +86,11 @@ sudo docker compose down --rmi all
 
 > 注意：这个位置可以插入购买链接。
 
-# 最终用户界面
+## 最终用户界面
 
 ![](./assets/img/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2.jpg)
 
-## TODO
+# TODO
 - [ ] 可保存聊天记录
 - [ ] 支持多个对话
 - [ ] 支持按 Token 计费
