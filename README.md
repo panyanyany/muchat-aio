@@ -26,6 +26,8 @@
 - 安装 [Docker](https://docs.docker.com/engine/install/ubuntu/)
 - 如果是大陆境内，需要**科学环境**
 
+ssh 登录到服务器，输入以下命令：
+
 ```bash
 cd /var/www/muchat
 
