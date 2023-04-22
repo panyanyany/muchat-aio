@@ -16,7 +16,7 @@
 - 支持多个 API-KEY
 - 支持后台查看用户使用量
 
-# Docker 开发环境搭建（推荐）
+# 安装教程：Docker 开发环境搭建（推荐）
 
 硬件环境：
 - 推荐 [阿里云香港](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=d3lnfvg1) 或者 [DigitalOcean](https://m.do.co/c/d353e23d928f)
