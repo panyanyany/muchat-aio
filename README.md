@@ -18,11 +18,13 @@
 
 # Docker 开发环境搭建（推荐）
 
-> 注意：需要有科学环境，否则可能会出现各种问题。
-
 硬件环境：
 - 推荐 [阿里云香港](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=d3lnfvg1) 或者 [DigitalOcean](https://m.do.co/c/d353e23d928f)
 - 突发性能实例最好是 4C8G
+
+软件依赖：
+- 安装 [Docker](https://docs.docker.com/engine/install/ubuntu/)
+- 如果是大陆境内，需要**科学环境**
 
 ```bash
 cd /var/www/muchat
