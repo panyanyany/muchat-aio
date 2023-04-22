@@ -24,7 +24,7 @@
 - 推荐 [阿里云香港](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=d3lnfvg1) 或者 [DigitalOcean](https://m.do.co/c/d353e23d928f)
 - 突发性能实例最好是 4C8G
 
-```
+```bash
 cd /var/www/muchat
 
 git clone https://github.com/panyanyany/muchat-aio          # all in one, 从这里启动整个系统
