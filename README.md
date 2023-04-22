@@ -37,6 +37,7 @@ cp .env.example .env
 # 如果你是在服务器部署，请编辑 .env 里的 REACT_APP_HOSTNAME 以设置你的服务器 IP
 docker compose up
 ```
+> 注意：如果仓库有更新，请直接 rm -rf 整个仓库，再重新 clone。
 
 - 当控制台出现如下提示，表示启动成功：
 ![](./assets/img/allup.jpg)
