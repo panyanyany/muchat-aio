@@ -29,7 +29,7 @@
 ssh 登录到服务器，输入以下命令：
 
 ```bash
-cd /var/www/muchat
+mkdir -p /var/www/muchat && cd /var/www/muchat
 
 git clone https://github.com/panyanyany/muchat-aio          # all in one, 从这里启动整个系统
 git clone https://github.com/panyanyany/muchat-go           # Go 语言实现的接口
