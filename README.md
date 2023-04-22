@@ -20,7 +20,7 @@
 
 硬件环境：
 - 推荐 [阿里云香港](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=d3lnfvg1) 或者 [DigitalOcean](https://m.do.co/c/d353e23d928f)
-- 突发性能实例最好是 4C8G
+- 突发性能实例最好是 4C8G （这个是开发版，很多要编译的，CPU尽量4核）
 
 软件依赖：
 - 如果是大陆境内，需要**科学环境**
