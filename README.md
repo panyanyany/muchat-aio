@@ -22,7 +22,7 @@
 
 硬件环境：
 - 推荐 [阿里云香港](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=d3lnfvg1) 或者 [DigitalOcean](https://m.do.co/c/d353e23d928f)
-- 2C2G 以上
+- 突发性能实例最好是 4C8G
 
 ```
 cd /var/www/muchat
