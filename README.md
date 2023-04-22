@@ -39,11 +39,11 @@ git clone https://github.com/panyanyany/muchat-laravel      # Laravel 实现的�
 cd muchat-aio
 cp .env.example .env
 # 如果你是在服务器部署，请编辑 .env 里的 REACT_APP_HOSTNAME 以设置你的服务器 IP
-docker compose up
+sudo docker compose up
 # Ctrl + C 停止整个系统
 
 # 一键停止整个系统，并移除所有 image，相当于重置了 docker 环境。但仓库文件未重置，需要单独 rm -rf repo
-docker compose down --rmi all
+sudo docker compose down --rmi all
 ```
 > 注意：如果仓库有更新，请直接 rm -rf 整个仓库，再重新 clone。  
 
