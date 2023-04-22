@@ -33,6 +33,8 @@ git clone https://github.com/panyanyany/muchat-react        # React 实现的用
 git clone https://github.com/panyanyany/muchat-laravel      # Laravel 实现的后台管理 UI
 
 cd muchat-aio
+cp .env.example .env
+# 如果你是在服务器部署，请编辑 .env 里的 REACT_APP_HOSTNAME 以设置你的服务器 IP
 docker compose up
 ```
 

@@ -13,10 +13,12 @@ services:
       - ../muchat-react:/app
       - /app/node_modules
     ports:
-     - "3000:3000"
+     - "0.0.0.0:3000:3000"
     command: sh -c "sh dk_init.sh && yarn start"
     networks:
       - default-network
+    environment:
+      - REACT_APP_HOSTNAME=${REACT_APP_HOSTNAME}
     # command: sleep 999999
   admin:
     build: ../muchat-laravel
@@ -25,7 +27,7 @@ services:
       - /app/vendor
       - /app/node_modules
     ports:
-      - "8000:8000"
+      - "0.0.0.0:8000:8000"
       - "5173:5173"
     networks:
       - default-network
@@ -44,7 +46,7 @@ services:
     volumes:
       - ../muchat-go:/app
     ports:
-      - "8080:8080"
+      - "0.0.0.0:8080:8080"
     networks:
       - default-network
     depends_on:
