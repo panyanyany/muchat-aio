@@ -25,6 +25,7 @@
 软件依赖：
 - 安装 [Docker](https://docs.docker.com/engine/install/ubuntu/)
 - 如果是大陆境内，需要**科学环境**
+- 系统推荐用 Ubuntu ，后面的命令也基于 Ubuntu
 
 ssh 登录到服务器，输入以下命令：
 
