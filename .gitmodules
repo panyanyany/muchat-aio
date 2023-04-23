@@ -1,0 +1,9 @@
+[submodule "muchat-go"]
+	path = muchat-go
+	url = https://github.com/panyanyany/muchat-go
+[submodule "muchat-react"]
+	path = muchat-react
+	url = https://github.com/panyanyany/muchat-react
+[submodule "muchat-laravel"]
+	path = muchat-laravel
+	url = https://github.com/panyanyany/muchat-laravel

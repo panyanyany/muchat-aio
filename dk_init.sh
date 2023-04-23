@@ -1,8 +1,7 @@
 /wait-for -t 60 http://api:8080 && /wait-for -t 60 http://admin:8000/admin/login && /wait-for -t 60 http://web:3000
 
-sleep 5
-
 if [ $? -eq 0 ]; then
+    sleep 5
     echo '----------------------------------------'
     echo '------------ 系统全部启动成功！ ----------'
     echo '----------------------------------------'
