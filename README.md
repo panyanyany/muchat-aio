@@ -41,6 +41,9 @@ sudo docker compose up
 # Ctrl + C 停止整个系统
 ```
 
+> 更多命令参考：[常用命令](./docs/常用命令.md)  
+  
+
 - 当控制台出现如下提示，表示启动成功：
 ![](./assets/img/allup.jpg)
 
