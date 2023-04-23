@@ -32,14 +32,22 @@ ssh 登录到服务器，输入以下命令：
 ```bash
 mkdir -p /var/www/muchat && cd /var/www/muchat
 
-git clone --recurse-submodules https://github.com/panyanyany/muchat-aio          # all in one, 从这里启动整个系统
+git clone https://github.com/panyanyany/muchat-aio          # all in one, 从这里启动整个系统
+git clone https://github.com/panyanyany/muchat-go           # Go 语言实现的接口
+git clone https://github.com/panyanyany/muchat-react        # React 实现的用户侧 UI
+git clone https://github.com/panyanyany/muchat-laravel      # Laravel 实现的后台管理 UI
 
 cd muchat-aio
 cp .env.example .env
 # 如果你是在服务器部署，请编辑 .env 里的 REACT_APP_HOSTNAME 以设置你的服务器 IP
 sudo docker compose up
 # Ctrl + C 停止整个系统
+
+# 一键停止整个系统，并移除所有 image，相当于重置了 docker 环境。但仓库文件未重置，需要单独 rm -rf repo
+sudo docker compose down --rmi all
 ```
+> 注意：如果仓库有更新，请直接 rm -rf 整个仓库，再重新 clone。  
+
 
 - 当控制台出现如下提示，表示启动成功：
 ![](./assets/img/allup.jpg)

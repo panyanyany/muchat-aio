@@ -8,9 +8,9 @@ services:
     networks:
       - default-network
   web:
-    build: ../muchat-react
+    build: ./muchat-react
     volumes:
-      - ../muchat-react:/app
+      - ./muchat-react:/app
       - /app/node_modules
     ports:
      - "0.0.0.0:3000:3000"
@@ -21,9 +21,9 @@ services:
       - REACT_APP_HOSTNAME=${REACT_APP_HOSTNAME}
     # command: sleep 999999
   admin:
-    build: ../muchat-laravel
+    build: ./muchat-laravel
     volumes:
-      - ../muchat-laravel:/app
+      - ./muchat-laravel:/app
       - /app/vendor
       - /app/node_modules
     ports:
@@ -42,9 +42,9 @@ services:
       - WAIT_HOST_CONNECT_TIMEOUT=3
       - DB_HOST=db
   api:
-    build: ../muchat-go
+    build: ./muchat-go
     volumes:
-      - ../muchat-go:/app
+      - ./muchat-go:/app
     ports:
       - "0.0.0.0:8080:8080"
     networks:
@@ -63,7 +63,7 @@ services:
   db:
     image: mysql:8.0
     volumes:
-      - ../muchat-laravel/docker/db:/docker-entrypoint-initdb.d
+      - ./muchat-laravel/docker/db:/docker-entrypoint-initdb.d
     ports:
       - "3307:3306"
     networks:
