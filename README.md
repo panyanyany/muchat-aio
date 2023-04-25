@@ -73,6 +73,8 @@ sudo docker compose up
 - Expires at: 过期时间，当用户第一次使用时，会根据 Max days 自动计算
 
 ## 接入发卡平台，或引流到私域
+> 不需要可跳过
+
 - 注册 [快发卡账号](http://www.kuaifaka.net/invitied?code=23957281)
 - 编辑 `muchat-react/src/config/agents.ts`
 - 假设你的域名为 example.com 或者 1.1.1.1:3000
