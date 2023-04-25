@@ -75,18 +75,31 @@ sudo docker compose up
 ## 接入发卡平台，或引流到私域
 - 注册 [快发卡账号](http://www.kuaifaka.net/invitied?code=23957281)
 - 编辑 `muchat-react/src/config/agents.ts`
-- 假设你的域名为 example.com 或者 1.1.1.1
+- 假设你的域名为 example.com 或者 1.1.1.1:3000
 ```javascript
     'example.com': {
         adLink1: '你的快发卡链接',
     },
+    '1.1.1.1:3000': {
+        adLink1: '你的快发卡链接',
+    },
 ```
+效果如下：  
+
+![](./assets/img/%E6%BF%80%E6%B4%BB%E7%A0%81%E5%BC%B9%E7%AA%97-fk.jpg)
+  
 - 如果你只是想留微信，可以这样：
 ```javascript
     'example.com': {
         wechat: '你的微信',
     },
+    '1.1.1.1:3000': {
+        wechat: '你的微信',
+    },
 ```
+效果如下：  
+
+![](./assets/img/%E6%BF%80%E6%B4%BB%E7%A0%81%E5%BC%B9%E7%AA%97-wx.jpg)
 
 ## 使用（用户侧）
 打开 http://localhost:3000/
