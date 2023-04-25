@@ -72,6 +72,22 @@ sudo docker compose up
 - Max days: 最大有效天数（自激活时算起，不激活则不计算）
 - Expires at: 过期时间，当用户第一次使用时，会根据 Max days 自动计算
 
+## 接入发卡平台，或引流到私域
+- 注册 [快发卡账号](http://www.kuaifaka.net/invitied?code=23957281)
+- 编辑 `muchat-react/src/config/agents.ts`
+- 假设你的域名为 example.com 或者 1.1.1.1
+```javascript
+    'example.com': {
+        adLink1: '你的快发卡链接',
+    },
+```
+- 如果你只是想留微信，可以这样：
+```javascript
+    'example.com': {
+        wechat: '你的微信',
+    },
+```
+
 ## 使用（用户侧）
 打开 http://localhost:3000/
 
