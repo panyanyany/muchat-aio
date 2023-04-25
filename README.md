@@ -101,7 +101,7 @@ sudo docker compose up
 ```
 效果如下：  
 
-![](./assets/img/%E6%BF%80%E6%B4%BB%E7%A0%81%E5%BC%B9%E7%AA%97-wx.jpg)
+![](./assets/img/%E6%BF%80%E6%B4%BB%E7%A0%81%E5%BC%B9%E7%AA%97-w.jpg)
 
 ## 使用（用户侧）
 打开 http://localhost:3000/
