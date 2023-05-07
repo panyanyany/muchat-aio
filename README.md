@@ -120,6 +120,10 @@ sudo docker compose up
 
 ## 预设Prompt界面
 
+- 底部状态栏  
+![](./assets/img/%E9%A2%84%E8%AE%BE%E7%95%8C%E9%9D%A22.jpg)
+
+- 设置和编辑预设Prompt  
 ![](./assets/img/%E9%A2%84%E8%AE%BE%E7%95%8C%E9%9D%A2.png)
 
 ## 升级更新
