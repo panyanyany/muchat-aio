@@ -16,6 +16,7 @@
 - 支持限制用户使用次数、有效期
 - 支持多个 API-KEY
 - 支持后台查看用户使用量
+- 支持预设Prompt
 
 # 安装教程：Docker 开发环境搭建（推荐）
 
@@ -117,13 +118,28 @@ sudo docker compose up
 
 ![](./assets/img/%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2.jpg)
 
+## 预设Prompt界面
+
+![](./assets/img/%E9%A2%84%E8%AE%BE%E7%95%8C%E9%9D%A2.png)
+
+## 升级更新
+```
+# Ctrl + C 结束 docker compose
+# docker compose rm <服务名> 删除对应服务
+# docker rmi muchat-aio-<服务名> 删除对应的镜像
+# 比如更新前端：
+docker compose rm web
+docker rmi muchat-aio-web
+# 然后重新:
+docker compose up
+```
+
 # TODO
 - [ ] 可保存聊天记录
 - [ ] 支持多个对话
 - [ ] 支持按 Token 计费
 - [ ] 支持 stream
 - [ ] 支持AI绘画
-- [ ] 支持预设 Prompt
 - [ ] 接入支付
 
 # 技术交流群
