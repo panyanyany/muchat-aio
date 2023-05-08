@@ -60,6 +60,7 @@ services:
       - WAIT_HOST_CONNECT_TIMEOUT=3
       - DB_HOST=db
       - DB_NAME=muchat
+      - AP_BASE_URL=https://api.openai.com/v1/
   db:
     image: mysql:8.0
     volumes:

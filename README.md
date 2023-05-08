@@ -123,8 +123,12 @@ sudo docker compose up
 - 底部状态栏  
 ![](./assets/img/%E9%A2%84%E8%AE%BE%E7%95%8C%E9%9D%A22.jpg)
 
-- 设置和编辑预设Prompt  
+- 设置和编辑预设Prompt
 ![](./assets/img/%E9%A2%84%E8%AE%BE%E7%95%8C%E9%9D%A2.png)
+
+## 使用国内中转API
+打开 `docker-compose.yml`
+将 `AP_BASE_URL=https://api.openai.com/v1/` 替换成中转链接，注意尾部的斜杠也要带上
 
 ## 升级更新
 ```
