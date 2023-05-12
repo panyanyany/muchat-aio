@@ -21,7 +21,7 @@
 # 安装教程：Docker 开发环境搭建（推荐）
 
 硬件环境：
-- 推荐 [阿里云香港](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=d3lnfvg1) 或者 [DigitalOcean](https://m.do.co/c/d353e23d928f)(新用户送200刀，白嫖！) 
+- 推荐 [DigitalOcean](https://m.do.co/c/d353e23d928f)(新用户送200刀，白嫖！) ，或者 [阿里云香港](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=d3lnfvg1) 
 - 突发性能实例最好是 4C8G （这个是开发版，很多要编译的，CPU尽量4核）
 
 软件依赖：
