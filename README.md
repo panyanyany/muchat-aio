@@ -123,7 +123,7 @@ sudo docker compose up
 - 底部状态栏  
 ![](./assets/img/%E9%A2%84%E8%AE%BE%E7%95%8C%E9%9D%A22.jpg)
 
-- 设置和编辑预设Prompt
+- 设置和编辑预设Prompt  
 ![](./assets/img/%E9%A2%84%E8%AE%BE%E7%95%8C%E9%9D%A2.png)
 
 ## 使用国内中转API
@@ -141,6 +141,16 @@ docker rmi muchat-aio-web
 # 然后重新:
 docker compose up
 ```
+
+# 常见问题
+## 系统临时维护中
+![](./assets/img/faq/%E7%B3%BB%E7%BB%9F%E4%B8%B4%E6%97%B6%E7%BB%B4%E6%8A%A4%E4%B8%AD.jpg)
+
+原因：后台缺少可用 OpenAI 账号
+
+## 点某个链接/按钮没反应
+
+关闭代理试试
 
 # TODO
 - [ ] 可保存聊天记录
