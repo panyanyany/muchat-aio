@@ -27,14 +27,18 @@
 软件依赖：
 - 如果是大陆境内，需要**科学环境**
 - 系统推荐用 Ubuntu ，后面的命令也基于 Ubuntu
-- 安装 [Docker](https://docs.docker.com/engine/install/ubuntu/)
 
 ssh 登录到服务器，输入以下命令：
 
 ```bash
+# 首先安装 Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+
+# 安装本项目
 mkdir -p /var/www/muchat && cd /var/www/muchat
 
-git clone --recurse-submodules https://github.com/panyanyany/muchat-aio          # all in one, 从这里启动整个系统
+# git clone --recurse-submodules https://github.com/panyanyany/muchat-aio          # all in one, 从这里启动整个系统
 
 cd muchat-aio
 cp .env.example .env
