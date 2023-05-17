@@ -1,5 +1,7 @@
 # Muchat
 团队版 ChatGPT Web 应用，多用户，免登录。适合公司、组织或小团体内部使用。
+Team version of ChatGPT web application- multi-user and no log-in required. Suitable for internal use in companies, organizations or small groups.  
+> See [English](./README_en.md)
 
 > *有人乍一看目录觉得只是发布了个 exe，但实际代码在各个子仓库中，本仓库只是一个入口*
 
