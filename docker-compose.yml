@@ -8,24 +8,19 @@ services:
     networks:
       - default-network
   web:
-    build: ./muchat-react
-    volumes:
-      - ./muchat-react:/app
-      - /app/node_modules
+    image: pan0x744/muchat-react:20230517
+    # build:
+    #   context: ../muchat-react
+    #   dockerfile: Dockerfile
     ports:
-     - "0.0.0.0:3000:3000"
-    command: sh -c "sh dk_init.sh && yarn start"
+     - "0.0.0.0:3000:80"
     networks:
       - default-network
     environment:
       - REACT_APP_HOSTNAME=${REACT_APP_HOSTNAME}
     # command: sleep 999999
   admin:
-    build: ./muchat-laravel
-    volumes:
-      - ./muchat-laravel:/app
-      - /app/vendor
-      - /app/node_modules
+    image: pan0x744/muchat-laravel:20230517
     ports:
       - "0.0.0.0:8000:8000"
       - "5173:5173"
@@ -33,7 +28,7 @@ services:
       - default-network
     depends_on:
       - db
-    command: sh -c "/wait && sh /app/dk_init.sh"
+    command: sh -c "/wait && sh dk_init.sh && php artisan serve --host=0.0.0.0"
     # command: sh -c "/wait && sleep 999999"
     environment:
       - WAIT_HOSTS=db:3306
@@ -42,16 +37,14 @@ services:
       - WAIT_HOST_CONNECT_TIMEOUT=3
       - DB_HOST=db
   api:
-    build: ./muchat-go
-    volumes:
-      - ./muchat-go:/app
+    image: pan0x744/muchat-go:20230517
     ports:
       - "0.0.0.0:8080:8080"
     networks:
       - default-network
     depends_on:
       - db
-    command: sh -c "sh dk_init.sh && go build -o bin/go_another_chatgpt && /wait && ./bin/go_another_chatgpt"
+    command: sh -c "/wait && ./bin/go_another_chatgpt"
     # command: sh -c "/wait && sleep 999999"
     environment:
       - WAIT_HOSTS=db:3306
