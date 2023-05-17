@@ -28,6 +28,8 @@
 - 如果是大陆境内，需要**科学环境**
 - 系统推荐用 Ubuntu ，后面的命令也基于 Ubuntu
 
+以下命令在 [DigitalOcean](https://m.do.co/c/d353e23d928f) 1C2G VPS 上确认无误。  
+
 ssh 登录到服务器，输入以下命令：
 
 ```bash
