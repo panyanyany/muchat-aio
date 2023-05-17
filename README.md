@@ -39,8 +39,7 @@ sh get-docker.sh
 mkdir -p /var/www/muchat && cd /var/www/muchat
 
 cd muchat-aio
-cp .env.example .env
-# 如果你是在服务器部署，请编辑 .env 里的 REACT_APP_HOSTNAME 以设置你的服务器 IP
+cp .env.example .env # 如果你是在服务器部署，请编辑 .env 里的 REACT_APP_HOSTNAME 以设置你的服务器 IP
 sudo docker compose up
 # Ctrl + C 停止整个系统
 ```
