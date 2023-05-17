@@ -10,11 +10,11 @@ fail() {
 if [ $? -ne 0 ]; then
     fail 'api'
 fi
-/wait-for -t 60 http://admin:8000/admin/login
+/wait-for -t 10 http://admin:8000/admin/login
 if [ $? -ne 0 ]; then
     fail 'admin'
 fi
-/wait-for -t 60 http://web:3000
+/wait-for -t 10 http://web:80
 if [ $? -ne 0 ]; then
     fail 'web'
 fi

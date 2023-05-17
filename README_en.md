@@ -36,3 +36,12 @@ cp .env.example .env # If you are deploying on a server, please edit the REACT_A
 sudo docker compose up
 # Ctrl + C to stop the entire system
 ```
+  
+- When the console displays the following message, it indicates that the startup is successful：
+![](./assets/img/allup.jpg)
+
+- Access web UI： http://localhost:3000  
+- Access admin panel： http://localhost:8000/admin
+    - Account：admin@admin.com
+    - Password：admin
+    - Note: please change your password.
