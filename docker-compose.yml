@@ -8,7 +8,7 @@ services:
     networks:
       - default-network
   web:
-    image: pan0x744/muchat-react:20230518
+    image: pan0x744/muchat-react:20230518.1
     # build:
     #   context: ../muchat-react
     #   dockerfile: Dockerfile
@@ -17,7 +17,8 @@ services:
     networks:
       - default-network
     environment:
-      - REACT_APP_HOSTNAME=${REACT_APP_HOSTNAME}
+      #- REACT_APP_HOSTNAME=${REACT_APP_HOSTNAME}
+      - REACT_APP_API_ENDPOINT=${REACT_APP_API_ENDPOINT}
     # command: sleep 999999
   admin:
     image: pan0x744/muchat-laravel:20230517

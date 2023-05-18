@@ -33,7 +33,7 @@ mkdir -p /var/www/muchat && cd /var/www/muchat
 
 git clone https://github.com/panyanyany/muchat-aio.git
 cd muchat-aio
-cp .env.example .env # If you are deploying on a server, please edit the REACT_APP_HOSTNAME in the .env file to set your server's IP address.
+cp .env.example .env # If you are deploying on a server, please edit the REACT_APP_API_ENDPOINT in the .env file to set your server's IP address.
 sudo docker compose up
 # Ctrl + C to stop the entire system
 ```
