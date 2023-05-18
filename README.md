@@ -139,12 +139,7 @@ sudo docker compose up
 ## 升级更新
 ```
 # Ctrl + C 结束 docker compose
-# docker compose rm <服务名> 删除对应服务
-# docker rmi muchat-aio-<服务名> 删除对应的镜像
-# 比如更新前端：
-docker compose rm web
-docker rmi muchat-aio-web
-# 然后重新:
+git pull
 docker compose up
 ```
 
