@@ -42,6 +42,7 @@ sh get-docker.sh
 # 安装本项目
 mkdir -p /var/www/muchat && cd /var/www/muchat
 
+git clone https://github.com/panyanyany/muchat-aio.git
 cd muchat-aio
 cp .env.example .env # 如果你是在服务器部署，请编辑 .env 里的 REACT_APP_HOSTNAME 以设置你的服务器 IP
 sudo docker compose up
