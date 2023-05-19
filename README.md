@@ -20,7 +20,7 @@ Team version of ChatGPT web application- multi-user and no log-in required. Suit
 - 支持后台查看用户使用量
 - 支持预设Prompt
 
-# 安装教程：Docker 开发环境搭建（推荐）
+# 部署教程：Docker 环境搭建（推荐）
 
 硬件环境：
 - 推荐 [DigitalOcean](https://m.do.co/c/d353e23d928f)(新用户送200刀，白嫖！) ，或者 [阿里云香港](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=d3lnfvg1) 
