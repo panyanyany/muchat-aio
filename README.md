@@ -19,6 +19,9 @@ Team version of ChatGPT web application- multi-user and no log-in required. Suit
 - 支持多个 API-KEY
 - 支持后台查看用户使用量
 - 支持预设Prompt
+- 支持本地保存聊天记录
+- 支持 stream
+- 支持多个对话
 
 # 部署教程：Docker 环境搭建（推荐）
 
@@ -154,10 +157,10 @@ docker compose up
 关闭代理试试
 
 # TODO
-- [ ] 可保存聊天记录
-- [ ] 支持多个对话
+- [-] 可保存聊天记录
+- [-] 支持 stream
+- [-] 支持多个对话
 - [ ] 支持按 Token 计费
-- [ ] 支持 stream
 - [ ] 支持AI绘画
 - [ ] 接入支付
 
