@@ -38,7 +38,7 @@ services:
       - WAIT_HOST_CONNECT_TIMEOUT=3
       - DB_HOST=db
   api:
-    image: pan0x744/muchat-go:20230519
+    image: pan0x744/muchat-go:20230522
     ports:
       - "0.0.0.0:8080:8080"
     networks:
