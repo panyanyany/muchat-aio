@@ -57,8 +57,8 @@ services:
     image: mysql:8.0
     volumes:
       - ../muchat-laravel/docker/db:/docker-entrypoint-initdb.d
-    ports:
-      - "3307:3306"
+    # ports:
+    #   - "3307:3306"
     networks:
       - default-network
     environment:
