@@ -21,7 +21,7 @@ services:
       - REACT_APP_API_ENDPOINT=${REACT_APP_API_ENDPOINT}
     # command: sleep 999999
   admin:
-    image: pan0x744/muchat-laravel:20230517
+    image: pan0x744/muchat-laravel:20230526
     ports:
       - "0.0.0.0:8000:8000"
       - "5173:5173"
