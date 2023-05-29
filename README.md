@@ -48,7 +48,7 @@ mkdir -p /var/www/muchat && cd /var/www/muchat
 git clone https://github.com/panyanyany/muchat-aio.git
 cd muchat-aio
 cp .env.example .env # 如果你是在服务器部署，把 .env 里的 REACT_APP_API_ENDPOINT 替换成你的IP或域名
-sudo docker compose up
+sudo docker compose up  # 注：部分版本要改成 sudo docker-compose up 中间多个横杠
 # Ctrl + C 停止整个系统
 ```
 
