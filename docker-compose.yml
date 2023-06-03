@@ -8,7 +8,7 @@ services:
     networks:
       - default-network
   web:
-    image: pan0x744/muchat-react:20230519
+    image: pan0x744/muchat-react:20230603
     # build:
     #   context: ../muchat-react
     #   dockerfile: Dockerfile
