@@ -164,14 +164,6 @@ docker compose up
 - [ ] 支持AI绘画
 - [ ] 接入支付
 
-# 技术交流群
-
-> 广告勿扰，包括但不限于硬广、昵称广告、纯营销号
-
-添加好友，请备注【Muchat进群】或【Muchat定制】：  
-  
-![](./assets/img/wechat.jpg)
-
 # 捐赠
 
 ![](./assets/img/alipay.jpg)
